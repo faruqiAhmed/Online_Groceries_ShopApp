@@ -1,7 +1,7 @@
 Locall Host Rest Api
 
-
-https://drive.google.com/file/d/1lj74fHJu-_nNDysJah9kIIbLfYiY4b3o/view?usp=drive_link
+[![asciicast](https://drive.google.com/file/d/1lj74fHJu-_nNDysJah9kIIbLfYiY4b3o/view?usp=drive_link
+)]
 
 Home Page
 
