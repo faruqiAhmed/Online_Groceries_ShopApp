@@ -2,7 +2,7 @@
 //  ExploreItemsView.swift
 //  OnlineGroceriesSwiftUI
 //
-//  Created by Md Omar Faruq on 6/9/24.
+//  Created by Md Omar Faruq on 5/9/24.
 //
 
 import SwiftUI
@@ -30,7 +30,7 @@ struct ExploreItemsView: View {
                         .scaledToFit()
                         .frame(width: 25, height: 25)
                 })
-                .padding(.leading,-180)
+                .padding(.leading,-160)
                 .padding(.horizontal, 16)
                 HStack{
                     
@@ -43,16 +43,6 @@ struct ExploreItemsView: View {
                         .font(.customfont(.bold, fontSize: 20))
                         .frame(height: 46)
                     Spacer()
-                    
-                    Button(action: {
-                        
-                    }, label: {
-                        Image("add_green")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 20, height: 20)
-                    })
-                    .frame(width: 40, height: 40)
                     
                 }
                 .padding(.top, .topInsets)

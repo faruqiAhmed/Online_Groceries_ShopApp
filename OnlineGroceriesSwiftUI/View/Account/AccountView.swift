@@ -9,45 +9,68 @@ import SwiftUI
 
 struct AccountView: View {
     static var user: MainViewModel = MainViewModel()
+    @StateObject var viewModel = ImagePickerViewModel()
+    @State var showingPopup = false
     var body: some View {
         ZStack{
             VStack{
                 
                 HStack(spacing: 15) {
-                    Image("u1")
-                        .resizable()
-                        .frame(width: 60, height: 60)
-                        .cornerRadius(30)
-                    
-                    VStack{
-                        
-                        HStack{
-                            Text(AccountView.user.userObj.username)
-                                .font(.customfont(.bold, fontSize: 20))
-                                .foregroundColor(.primaryText)
-                            
-                            Image(systemName: "pencil")
-                                .foregroundColor(.primaryApp)
-                            
-                            Spacer()
+        
+                    VStack {
+                        if let selectedImage = viewModel.selectedImage {
+                            Image(uiImage: selectedImage )
+                                .resizable()
+                                .frame(width: 100, height: 100)
+                                .cornerRadius(50)
+                        } else {
+                            // Text("No image selected")
+                            Image ("u1")
+                                .padding()
+                                .frame(width: 100, height: 100)
+                                .cornerRadius(50)
                         }
                         
-                        Text(AccountView.user.userObj.email)
-                            .font(.customfont(.regular, fontSize: 16))
-                            .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading )
-                            .accentColor(.secondaryText)
-                        
-                        
+                        HStack {
+                            Button(action: {
+                                viewModel.selectSource(.camera)
+                            }) {
+                                Text("Open Camera")
+                            }
+                            .padding()
                             
+                            Button(action: {
+                                viewModel.selectSource(.photoLibrary)
+                            }) {
+                                Text("Photo Library")
+                            }
+                            .padding()
+                        }
+                        .sheet(isPresented: $viewModel.isPickerPresented) {
+                            ImagePickerView(selectedImage: $viewModel.selectedImage, sourceType: viewModel.pickerSourceType)
+                        }
                     }
                 }
-                .onAppear{
+                Divider()
+              
+               VStack{
                     
-                }
-                .padding(.horizontal, 20)
-                .padding(.top, .topInsets)
+                   Text ("User Info")
+                        Text(AccountView.user.userObj.username)
+                            .font(.customfont(.bold, fontSize: 20))
+                            .foregroundColor(.primaryText)
+                    
+                    
+                    Text(AccountView.user.userObj.email)
+                        .font(.customfont(.regular, fontSize: 16))
+//                        .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading )
+                        .accentColor(.secondaryText)
+            }
+               .padding()
+           
                 
                 Divider()
+                
                 
                         Button {
                             MainViewModel.shared.logout()

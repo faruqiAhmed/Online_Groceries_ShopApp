@@ -66,6 +66,8 @@
 		CBD690702A7904B8002EE6D3 /* ServiceCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD6906F2A7904B8002EE6D3 /* ServiceCall.swift */; };
 		CBD690722A790935002EE6D3 /* Globs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD690712A790935002EE6D3 /* Globs.swift */; };
 		CBD690752A790C7B002EE6D3 /* UIKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD690742A790C7B002EE6D3 /* UIKitExtension.swift */; };
+		E27315492C8AC17700F3C986 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27315482C8AC17700F3C986 /* ImagePickerView.swift */; };
+		E273154B2C8AC1B500F3C986 /* ImagePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E273154A2C8AC1B500F3C986 /* ImagePickerViewModel.swift */; };
 		E29652702C894A2E00CCF5A4 /* shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E296526F2C894A2E00CCF5A4 /* shop.swift */; };
 /* End PBXBuildFile section */
 
@@ -148,6 +150,8 @@
 		CBD6906F2A7904B8002EE6D3 /* ServiceCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCall.swift; sourceTree = "<group>"; };
 		CBD690712A790935002EE6D3 /* Globs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globs.swift; sourceTree = "<group>"; };
 		CBD690742A790C7B002EE6D3 /* UIKitExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtension.swift; sourceTree = "<group>"; };
+		E27315482C8AC17700F3C986 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		E273154A2C8AC1B500F3C986 /* ImagePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewModel.swift; sourceTree = "<group>"; };
 		E296526F2C894A2E00CCF5A4 /* shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				CB7C294E2A8358BE00A1E404 /* AccountView.swift */,
+				E27315482C8AC17700F3C986 /* ImagePickerView.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -335,6 +340,7 @@
 				CBC6D4982A80209A00BAA917 /* ExploreItemViewModel.swift */,
 				CB8E0E3C2A81FFFE0018A4FF /* CartViewModel.swift */,
 				CB9D6EB82A8D41AA00669923 /* ForgotPasswordViewModel.swift */,
+				E273154A2C8AC1B500F3C986 /* ImagePickerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -550,6 +556,7 @@
 				CB6C332F2A7CB279007CECA2 /* ProductModel.swift in Sources */,
 				CB165DB42A7B583B00A672DE /* HomeView.swift in Sources */,
 				CB8E0E442A8204C80018A4FF /* CartItemRow.swift in Sources */,
+				E273154B2C8AC1B500F3C986 /* ImagePickerViewModel.swift in Sources */,
 				CB94C9A92A8B3F94002F1597 /* OrderItemRow.swift in Sources */,
 				CBC7477E2A76D29100DD527C /* RoundButton.swift in Sources */,
 				CBAFEF092A76C8B5009DF242 /* OnlineGroceriesSwiftUIApp.swift in Sources */,
@@ -559,6 +566,7 @@
 				CB165DB82A7B58C100A672DE /* ExploreView.swift in Sources */,
 				CB05BDEC2A7A21F900A3BAAB /* UserModel.swift in Sources */,
 				CBC6D4992A80209A00BAA917 /* ExploreItemViewModel.swift in Sources */,
+				E27315492C8AC17700F3C986 /* ImagePickerView.swift in Sources */,
 				CB165DBC2A7B5FAF00A672DE /* TabButton.swift in Sources */,
 				CB8E0E3D2A81FFFE0018A4FF /* CartViewModel.swift in Sources */,
 				CB05BDEA2A7A1C5800A3BAAB /* SignUpView.swift in Sources */,
@@ -743,10 +751,10 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OnlineGroceriesSwiftUI/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
@@ -778,10 +786,10 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OnlineGroceriesSwiftUI/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
