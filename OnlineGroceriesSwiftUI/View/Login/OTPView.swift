@@ -11,7 +11,6 @@ struct OTPView: View {
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     @StateObject var forgotVM = ForgotPasswordViewModel.shared;
     
-    
     var body: some View {
         ZStack {
             Image("bottom_bg")
