@@ -2,7 +2,7 @@
 //  HomeView.swift
 //  OnlineGroceriesSwiftUI
 //
-//  Created by CodeForAny on 03/08/23.
+//  Created by Md Omar Faruq on 5/9/24.
 //
 
 import SwiftUI
@@ -13,27 +13,21 @@ struct HomeView: View {
     var body: some View {
         ZStack{
             ScrollView{
-                VStack{
-                    Image("color_logo")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 25)
-                    
-                    HStack{
-                        Image("location")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 16, height: 16 )
-                        
-                        Text("Dhaka, Banassre")
-                            .font(.customfont(.semibold, fontSize: 18))
-                            .foregroundColor(.darkGray)
-                    }
-                    
-                    SearchTextField(placholder: "Search Store", txt: $homeVM.txtSearch)
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 10)
-                }
+          VStack{
+        
+                
+                 HStack{
+                
+                     Text("Groceries Shop ")
+                         .font(.customfont(.semibold, fontSize: 18))
+                         .foregroundColor(.darkGray)
+                  }
+                
+                  SearchTextField(placholder: "Search Store", txt: $homeVM.txtSearch)
+                      .padding(.horizontal, 20)
+                     .padding(.vertical, 10)
+               }
+             
                 .padding(.top, .topInsets )
                 
                 Image("banner_top")
@@ -41,11 +35,6 @@ struct HomeView: View {
                     .scaledToFill()
                     .frame(height: 115)
                     .padding(.horizontal, 20)
-                
-                SectionTitleAll(title: "Exclusive offer", titleAll: "See All") {
-                    
-                }
-                .padding(.horizontal, 20)
                 
                 ScrollView(.horizontal, showsIndicators: false ) {
                     LazyHStack(spacing: 15) {

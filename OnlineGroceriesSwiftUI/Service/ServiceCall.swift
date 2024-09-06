@@ -14,7 +14,6 @@ class ServiceCall {
         
         DispatchQueue.global(qos: .userInitiated).async {
             
-            
             var parameterData = NSMutableData()
             let dictKey = parameter.allKeys as! [String]
             

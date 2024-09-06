@@ -62,16 +62,6 @@ struct MyCartView: View {
                                 .foregroundColor(.white)
                                 .multilineTextAlignment(.center)
                             
-                            HStack {
-                                Spacer()
-                                Text("$\(cartVM.total)")
-                                    .font(.customfont(.semibold, fontSize: 12))
-                                    .foregroundColor(.white)
-                                    .padding(.horizontal, 8)
-                                    .padding(.vertical, 4)
-                                    .background(Color.darkGray.opacity(0.2))
-                                    .cornerRadius(5)
-                            }
                             .padding(.trailing)
                         }
                         

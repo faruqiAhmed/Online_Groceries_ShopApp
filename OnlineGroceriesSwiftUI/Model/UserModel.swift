@@ -2,7 +2,7 @@
 //  UserModel.swift
 //  OnlineGroceriesSwiftUI
 //
-//  Created by CodeForAny on 02/08/23.
+//  Created by Md Omar Faruq on 5/9/24.
 //
 
 import SwiftUI

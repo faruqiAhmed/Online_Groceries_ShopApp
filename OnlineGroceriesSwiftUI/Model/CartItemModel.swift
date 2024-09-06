@@ -2,7 +2,7 @@
 //  CartItemModel.swift
 //  OnlineGroceriesSwiftUI
 //
-//  Created by CodeForAny on 08/08/23.
+//  Created by Md Omar Faruq on 6/9/24.
 //
 
 import SwiftUI

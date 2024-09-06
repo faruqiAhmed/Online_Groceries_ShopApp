@@ -37,16 +37,6 @@ struct ProductDetailView: View {
                             .font(.customfont(.bold, fontSize: 24))
                             .foregroundColor(.primaryText)
                             .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-                        Button {
-                            detailVM.serviceCallAddRemoveFav()
-                        } label: {
-                            
-                            Image( detailVM.isFav ? "favorite" : "fav"  )
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 30, height: 30)
-                        }
-                        .foregroundColor(Color.secondaryText)
 
                     }
                     Text("\(detailVM.pObj.unitValue)\(detailVM.pObj.unitName), Price")

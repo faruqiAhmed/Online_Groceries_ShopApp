@@ -2,7 +2,7 @@
 //  ExploreItemsView.swift
 //  OnlineGroceriesSwiftUI
 //
-//  Created by CodeForAny on 07/08/23.
+//  Created by Md Omar Faruq on 6/9/24.
 //
 
 import SwiftUI
@@ -20,7 +20,18 @@ struct ExploreItemsView: View {
     var body: some View {
         ZStack{
             VStack {
-                
+                Button(action: {
+                    mode.wrappedValue.dismiss()
+                },
+                       
+                       label: {
+                    Image("back")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 25, height: 25)
+                })
+                .padding(.leading,-180)
+                .padding(.horizontal, 16)
                 HStack{
                     
                     EmptyView()

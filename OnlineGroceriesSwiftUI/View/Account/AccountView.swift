@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AccountView: View {
+    static var user: MainViewModel = MainViewModel()
     var body: some View {
         ZStack{
             VStack{
@@ -21,7 +22,7 @@ struct AccountView: View {
                     VStack{
                         
                         HStack{
-                            Text("Code For Any")
+                            Text(AccountView.user.userObj.username)
                                 .font(.customfont(.bold, fontSize: 20))
                                 .foregroundColor(.primaryText)
                             
@@ -31,7 +32,7 @@ struct AccountView: View {
                             Spacer()
                         }
                         
-                        Text("codeforany@gmail.com")
+                        Text(AccountView.user.userObj.email)
                             .font(.customfont(.regular, fontSize: 16))
                             .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading )
                             .accentColor(.secondaryText)
@@ -39,6 +40,9 @@ struct AccountView: View {
                         
                             
                     }
+                }
+                .onAppear{
+                    
                 }
                 .padding(.horizontal, 20)
                 .padding(.top, .topInsets)
