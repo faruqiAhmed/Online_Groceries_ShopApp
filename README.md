@@ -1,7 +1,7 @@
-Locall Host Rest Api
+Local Host Rest API
 
 
-
+Swift and Swift UI and Used MVVM 
 
 Home Page
 
@@ -12,4 +12,10 @@ Home Page
 Checkout Page 
 <img width="374" alt="Screenshot 2024-09-06 at 6 45 00 PM" src="https://github.com/user-attachments/assets/58ca57bb-b840-486b-a2a3-2cb936e23669">
 <img width="374" alt="Screenshot 2024-09-06 at 6 45 08 PM" src="https://github.com/user-attachments/assets/ee66d834-a493-46c4-a6a8-080bb58e47d3">
+
+
+<img width="374" alt="Screenshot 2024-09-06 at 7 06 50 PM" src="https://github.com/user-attachments/assets/34886fa3-2de7-4fe3-a310-b418f2869088">
+
+
+
 <img width="374" alt="Screenshot 2024-09-06 at 6 46 38 PM" src="https://github.com/user-attachments/assets/d19c5779-1e99-41d1-9543-24737930a429">
