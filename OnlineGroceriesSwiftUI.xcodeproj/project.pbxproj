@@ -59,7 +59,6 @@
 		CBC6D49B2A80215000BAA917 /* ExploreItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC6D49A2A80215000BAA917 /* ExploreItemsView.swift */; };
 		CBC7477E2A76D29100DD527C /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC7477D2A76D29100DD527C /* RoundButton.swift */; };
 		CBC747802A76D33400DD527C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC7477F2A76D33400DD527C /* SignInView.swift */; };
-		CBC747832A76D78200DD527C /* CountryPicker in Frameworks */ = {isa = PBXBuildFile; productRef = CBC747822A76D78200DD527C /* CountryPicker */; };
 		CBD6906A2A78F949002EE6D3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD690692A78F949002EE6D3 /* LoginView.swift */; };
 		CBD6906C2A78FCA8002EE6D3 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD6906B2A78FCA8002EE6D3 /* MainViewModel.swift */; };
 		CBD6906E2A78FDE1002EE6D3 /* LineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD6906D2A78FDE1002EE6D3 /* LineTextField.swift */; };
@@ -161,7 +160,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB6C33342A7CBA77007CECA2 /* SDWebImageSwiftUI in Frameworks */,
-				CBC747832A76D78200DD527C /* CountryPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +412,6 @@
 			);
 			name = OnlineGroceriesSwiftUI;
 			packageProductDependencies = (
-				CBC747822A76D78200DD527C /* CountryPicker */,
 				CB6C33332A7CBA77007CECA2 /* SDWebImageSwiftUI */,
 			);
 			productName = OnlineGroceriesSwiftUI;
@@ -490,7 +487,6 @@
 			);
 			mainGroup = CBAFEEFC2A76C8B4009DF242;
 			packageReferences = (
-				CBC747812A76D78200DD527C /* XCRemoteSwiftPackageReference "CountryPicker" */,
 				CB6C33322A7CBA77007CECA2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = CBAFEF062A76C8B5009DF242 /* Products */;
@@ -932,14 +928,6 @@
 				minimumVersion = 2.0.0;
 			};
 		};
-		CBC747812A76D78200DD527C /* XCRemoteSwiftPackageReference "CountryPicker" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobven/CountryPicker.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -947,11 +935,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CB6C33322A7CBA77007CECA2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
-		};
-		CBC747822A76D78200DD527C /* CountryPicker */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CBC747812A76D78200DD527C /* XCRemoteSwiftPackageReference "CountryPicker" */;
-			productName = CountryPicker;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
